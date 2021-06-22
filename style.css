@@ -101,7 +101,7 @@ body{
      overflow: hidden;
  }
  
- .works-list li{
+ .works-list li {
      display: block;
      width: 100%;
      max-width: 348px; 
@@ -109,40 +109,39 @@ body{
      margin-right: 15px;
  }
  
- .works-list li:last-child{
+ .works-list li:last-child {
      margin-right: 0;
  }
  
- .works-list li img{
+ .works-list li img {
      width: 100%;
      border: 1px solid #CCC;
  }
  
- .works-list li h3{
+ .works-list li h3 {
      font-size: 24px;
      margin: 10px 0;
  }
  
- .works-list li span{
+ .works-list li span {
      font-size: 18px;
  }
  
- .works-list li.link{
-     display: flex;
-     justify-content: left;
-     align-items: left;
-     margin-top: 15px;
+ .works-list li.link {
+     display:flex;
+     justify-content:left;
+     align-items:left;
+     margin-top:15px;
  }
  
- .works-list li.link a{
+ .works-list li .link a {
      background-color: rgb(226,226,226);
-     padding: 5px 20px;
-     margin: 10px;
-     font-size: 15px;
-     text-decoration: none;
-     color: #000;
+     padding:5px 20px;
+     margin-right:10px;
+     font-size:15px;
+     text-decoration:none;
+     color:#000;
  }
- 
  
  /*
  *{footer}のスタイルシート
@@ -154,3 +153,94 @@ body{
      font-size: 15px;
      margin: 50px 0 20px;
  }
+ /*
+     * タブレット用のスタイルシート
+     */
+     /*@media screen and (max-width: 767px) {
+         .sub-title {
+             color: red;
+         }
+     }*/
+  
+    /*
+     * スマホ用のスタイルシート
+     */
+  
+     @media screen and (max-width: 480px) {
+         body {
+             min-width: 100%;
+         }
+  
+         /*
+          * [header]のスタイルシート
+          */
+  
+          .block-header {
+             padding: 0 10px 10px;
+             box-shadow: 0 8px 8px -5px rgba(204,204,204,0.3);
+         }
+         
+         .block-header a {
+             font-size: 31px;
+         }
+  
+         /*
+          * [main]のスタイルシート
+          */
+  
+          .block-main {
+             margin: 50px 0;
+         }
+  
+         /*
+          *  [profile]のスタイルシート
+          */
+          
+          .box-profile {
+              padding: 0 10px;
+          }
+  
+          .item-list {
+              max-width: 100%;
+          }
+  
+          .item-list b {
+              font-size: 18px;
+          }
+          .icon-list {
+              max-width: 100%;
+          }
+          .icon-list li {
+              margin-right: 25px;
+          }
+  
+         /*
+          * [works]のスタイルシート
+          */
+  
+          .box-works {
+              margin: 60px 0 0;
+              padding: 0 10px;
+          }
+          .works-list {
+              max-width: 100%;
+          }
+          .works-list li {
+              max-width: 100%;
+               float: none;
+               margin-right: 0;
+               margin-bottom: 30px;
+          }
+  
+          .works-list h3 {
+              font-size: 20px;
+              margin: 5px 0;
+          }
+  
+          .works-list span {
+              font-size: 14px;
+          }
+     }
+ 
+ 
+  
